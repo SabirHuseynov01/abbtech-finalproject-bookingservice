@@ -1,4 +1,9 @@
 package abbtech.finalproject.BookingService.dto.request;
 
-public class BookingRequest {
+public record BookingRequest(Long roomId,
+                             String userEmail,
+                             String checkInDate,
+                             String checkOutDate,
+                             String paymentMethod,
+                             Double amount) {
 }

@@ -1,4 +1,9 @@
 package abbtech.finalproject.BookingService.dto.response;
 
-public class BookingResponse {
+public record BookingResponse(Long id,
+                              Long roomId,
+                              String userEmail,
+                              String confirmationCode,
+                              String paymentMethod,
+                              Double amount) {
 }
